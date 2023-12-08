@@ -1,0 +1,4 @@
+﻿  Exercise1.cpp
+D:\Bsuir\Oaip\Labs\Lab4\Exercise1\Exercise1\Exercise1.cpp(38,23): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+  LINK : не найден или не выполнена сборка D:\Bsuir\Oaip\Labs\Lab4\Exercise1\x64\Debug\Exercise1.exe при последней инкрементной компоновке; выполняется полная компоновка
+  Exercise1.vcxproj -> D:\Bsuir\Oaip\Labs\Lab4\Exercise1\x64\Debug\Exercise1.exe

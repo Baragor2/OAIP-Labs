@@ -1,0 +1,4 @@
+﻿  Exsercise2.cpp
+C:\Bsuir\Oaip\Dz1\Exercise 2\Exsercise2\Exsercise2\Exsercise2.cpp(8,19): warning C4101: z2: неиспользованная локальная переменная
+C:\Bsuir\Oaip\Dz1\Exercise 2\Exsercise2\Exsercise2\Exsercise2.cpp(8,15): warning C4101: z1: неиспользованная локальная переменная
+  Exsercise2.vcxproj -> C:\Bsuir\Oaip\Dz1\Exercise 2\Exsercise2\x64\Debug\Exsercise2.exe

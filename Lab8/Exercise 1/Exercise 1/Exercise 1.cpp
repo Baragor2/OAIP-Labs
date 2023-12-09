@@ -3,10 +3,16 @@
 
 using namespace std;
 
+double Out_Rez(double a) {
+    double y;
+    y = exp(a) * sin(a);
+    return y;
+}
+
 int main() {
 
     setlocale(LC_ALL, "RU");
-
+    
     double a, b, h, y, i = 1, min_y, max_y;
 
     cout << "\nВведите значение a: " << endl;
@@ -22,7 +28,7 @@ int main() {
     max_y = exp(a) * sin(a);
 
     while (a < b) {
-        y = exp(a) * sin(a);
+        y = Out_Rez(a);
 
         if (y < min_y)
         {
@@ -44,6 +50,3 @@ int main() {
 }
 
 
-void Out_Rez(){
-
-}

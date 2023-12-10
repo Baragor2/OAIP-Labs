@@ -3,16 +3,15 @@
 
 using namespace std;
 
-double Out_Rez(double a) {
-    double y;
-    y = exp(a) * sin(a);
-    return y;
+// Функция Out_Rez принимает аргумент и возвращает функцию Y(x)
+double Out_Rez(double x) {
+    return exp(x) * sin(x);
 }
 
 int main() {
 
-    setlocale(LC_ALL, "RU");
-    
+    setlocale(LC_ALL, "RU"); //Вывод русского текста в консоль
+
     double a, b, h, y, i = 1, min_y, max_y;
 
     cout << "\nВведите значение a: " << endl;
@@ -24,19 +23,20 @@ int main() {
     cout << "\nВведите значение h: " << endl;
     cin >> h;
 
-    min_y = exp(a) * sin(a);
-    max_y = exp(a) * sin(a);
+    // Вычисление начального минимального и максимального значений
+    min_y = Out_Rez(a); 
+    max_y = Out_Rez(a);
 
     while (a < b) {
-        y = Out_Rez(a);
+        y = Out_Rez(a); //Запускаем функцию для вычисления Y(x)
 
-        if (y < min_y)
-        {
+        // Проверка на новое минимальное значение
+        if (y < min_y) {
             min_y = y;
         }
 
-        if (y > max_y)
-        {
+        // Проверка на новое максимальное значение
+        if (y > max_y) { 
             max_y = y;
         }
 
@@ -48,5 +48,4 @@ int main() {
 
     return 0;
 }
-
 

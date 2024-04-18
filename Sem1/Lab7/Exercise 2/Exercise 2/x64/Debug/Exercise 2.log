@@ -1,0 +1,6 @@
+﻿  Exercise 2.cpp
+D:\Bsuir\Oaip\Labs\OAIP-Labs\Lab7\Exercise 2\Exercise 2\Exercise 2.cpp(59,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Bsuir\Oaip\Labs\OAIP-Labs\Lab7\Exercise 2\Exercise 2\Exercise 2.cpp(89,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Bsuir\Oaip\Labs\OAIP-Labs\Lab7\Exercise 2\Exercise 2\Exercise 2.cpp(197,24): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Bsuir\Oaip\Labs\OAIP-Labs\Lab7\Exercise 2\Exercise 2\Exercise 2.cpp(211,24): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Exercise 2.vcxproj -> D:\Bsuir\Oaip\Labs\OAIP-Labs\Lab7\Exercise 2\x64\Debug\Exercise 2.exe

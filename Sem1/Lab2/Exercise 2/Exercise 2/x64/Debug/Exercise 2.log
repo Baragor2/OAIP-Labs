@@ -1,0 +1,5 @@
+﻿  Exercise 2.cpp
+D:\Bsuir\Oaip\Labs\OAIP-Labs\Lab2\Exercise 2\Exercise 2\Exercise 2.cpp(35,16): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\Bsuir\Oaip\Labs\OAIP-Labs\Lab2\Exercise 2\Exercise 2\Exercise 2.cpp(39,16): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\Bsuir\Oaip\Labs\OAIP-Labs\Lab2\Exercise 2\Exercise 2\Exercise 2.cpp(42,16): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  Exercise 2.vcxproj -> D:\Bsuir\Oaip\Labs\OAIP-Labs\Lab2\Exercise 2\x64\Debug\Exercise 2.exe

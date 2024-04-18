@@ -1,0 +1,3 @@
+﻿  Exercise 2.cpp
+D:\Bsuir\Oaip\Labs\Lab3\Exercise 2\Exercise 2\Exercise 2.cpp(13,12): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+  Exercise 2.vcxproj -> D:\Bsuir\Oaip\Labs\Lab3\Exercise 2\x64\Debug\Exercise 2.exe

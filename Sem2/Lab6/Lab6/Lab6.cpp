@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <math.h>
+#include <vector>
 
 using namespace std;
 
@@ -242,20 +243,23 @@ Node* deleteNode(Node* root, int key) {
 }
 
 
-// Функция для определения количества листьев на каждом уровне
-void problemSolution(Node* root, int* num) {
-	if (root != NULL) {
-		if (root->left_child == NULL && root->right_child == NULL) {
-			(*num)++;
-		}
-		if (root->left_child != NULL) {
-			problemSolution(root->left_child, num);
-		}
-		if (root->right_child != NULL) {
-			problemSolution(root->right_child, num);
-		}
+void IndividualTask(Node* node, int level, vector<int>& leaves) {
+	if (node == NULL)
+		return;
+
+	if (node->left_child == NULL && node->right_child == NULL) {
+		if (leaves.size() <= level)
+			leaves.resize(level + 1);
+		leaves[level]++;
 	}
 
+	IndividualTask(node->left_child, level + 1, leaves);
+	IndividualTask(node->right_child, level + 1, leaves);
+}
+
+void printLeaves(const vector<int>& leaves) {
+	for (int i = 0; i < leaves.size(); i++)
+		cout << "Уровень " << i << ": " << leaves[i] << " листьев" << endl;
 }
 
 
@@ -268,6 +272,7 @@ int main() {
 	char dataInput[50];
 	int num_levels;
 	int* leaf_counter;
+	vector<int> leaves;
 
 	while (true) {
 		cout << "1.Добавить узлы\n2.Сбалансировать дерево\n3.Вывести дерево\n"
@@ -384,19 +389,8 @@ int main() {
 
 		// Индивидуальное задание (определить число листьев на каждом уровне)
 		case 7:
-			printTree("", root, false);
-
-			num_levels = heightBT(root);
-			leaf_counter = new int[num_levels]();
-			problemSolution(root, leaf_counter);
-
-			cout << "\nКоличество листьев на уровне:\n";
-			for (int i = 0; i < num_levels; ++i) {
-				cout << leaf_counter[i] << " ";
-			}
-			cout << "\n\n";
-
-			delete[] leaf_counter;
+			IndividualTask(root, 0, leaves);
+			printLeaves(leaves);
 			break;
 
 		case 9: default:

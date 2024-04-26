@@ -1,3 +1,5 @@
 ﻿  Lab6.cpp
-D:\Bsuir\2 Семестр\Oaip\Lab6\Lab6\Lab6.cpp(267,6): warning C4101: qDes: неиспользованная локальная переменная
+D:\Bsuir\2 Семестр\Oaip\Lab6\Lab6\Lab6.cpp(274,7): warning C4101: leaf_counter: неиспользованная локальная переменная
+D:\Bsuir\2 Семестр\Oaip\Lab6\Lab6\Lab6.cpp(273,6): warning C4101: num_levels: неиспользованная локальная переменная
+D:\Bsuir\2 Семестр\Oaip\Lab6\Lab6\Lab6.cpp(270,6): warning C4101: qDes: неиспользованная локальная переменная
   Lab6.vcxproj -> D:\Bsuir\2 Семестр\Oaip\Lab6\x64\Debug\Lab6.exe
